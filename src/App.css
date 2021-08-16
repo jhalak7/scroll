@@ -1,0 +1,150 @@
+
+.first{
+    display: flex;
+    width: 1000px;
+    height: 470px;
+    margin: auto;
+    margin-top: 40px;
+    border:1px solid rgb(218, 214, 214);
+    border-radius: 4px;
+    padding-top: 100px;
+    padding-left: 60px;
+}
+
+canvas{
+    height: 300px;
+    width: 480px;
+    z-index: 10;
+}
+.form-text{
+    width: 350px;
+    height: 50px;
+    margin-left: 0px;
+	position:relative;
+    outline: none;
+    font-size: 1.25rem;
+}
+input{
+	padding:4px 4px 5px 20px;
+    outline: none;
+    border: rgb(241, 241, 241) 1px solid;
+    width: 350px;
+    height: 50px;
+    font-size: 1.1rem;
+	color:rgb(44, 44, 44);
+
+}
+.static-value{
+    border: none;
+	position:absolute;
+	left:10px;
+	font-weight:bold;
+	color:rgb(3, 3, 3);
+	top:17px;
+}
+.second{
+    width: 400px;
+      font-family: TT Norms,Helvetica,Arial;;
+    font-weight: 600;
+    color: rgb(59, 59, 59);
+}
+.handler{
+    position: absolute;
+}
+.par{
+    width: 350px;
+    color: rgba(131,136,140);
+    font-size: 14px;
+    margin-top: 50px;
+    font-family: TT Norms,Helvetica,Arial;
+    font-weight: 500;
+}
+svg{
+    position: absolute;
+    z-index: 1;
+}
+.stp{
+    margin-top: 0px;
+    font-size: 10px;
+    color: rgb(153, 147, 147);
+    margin-left: 0px;
+}
+.ndp{
+    margin-top: 0px;
+    font-size: 10px;
+    color: rgb(153, 147, 147);
+    margin-left: 100px;
+
+}
+.rdp{
+    margin-top: 0px;
+    font-size: 10px;
+    color: rgb(153, 147, 147);
+    margin-left: 110px;
+
+}
+.thp{
+    margin-top: 0px;
+    font-size: 10px;
+    color: rgb(153, 147, 147);
+    margin-left: 100px;
+
+}
+.svgs{
+    display: flex;
+    margin-bottom: 10px;
+}
+.ps{
+    display: flex;
+}
+.ndsvg{
+    margin-left: 160px;
+}
+.rdsvg{
+    margin-left: 320px;
+}
+.thsvg{
+    margin-left: 470px;
+}
+.timep{font-size: 1.25rem;
+    font-weight: 600;
+    margin-left: 20px;
+}
+.amountp{
+    font-size: 4rem;
+    font-weight: 600;
+    margin-top: -20px;
+    margin-left: 25px;   
+    font-family: Blacker,Times New Roman;
+
+}
+.loga{
+    border-left: 1px solid rgb(238, 237, 237);
+    height: 300px;
+}
+@media only screen and (max-width: 768px) {
+   
+    .first {
+        display: block;
+      width: 400px;
+    }
+    .second{
+        margin:auto
+    }
+    .loga{
+        margin:auto
+    }
+    canvas{
+        width: 300px;
+        height: 200px;
+    }
+    .timep{
+        font-size: 0.8rem;
+
+    }
+    .amountp{
+        font-size: 1.7rem;
+        margin-top: -10px;
+    }
+
+  }

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en"> 
+  <!-- <script>
+      function jau(){
+    var canvas = document.getElementById("mycanvas"); 
+    ctx = canvas.getContext("2d");
+
+    var background = new Image();
+    background.src = "https://thumbs.dreamstime.com/b/wood-log-as-fire-front-white-background-35834516.jpg";
+
+// Make sure the image is loaded first otherwise nothing will draw.
+    background.onload = function(){
+    ctx.drawImage(background,0,0);   
+}
+   }
+  </script> -->
+   <body onresize="can()">
+    <div id="root">
+      <img id="scream" width="220" height="277" src="https://i.ibb.co/4jJtXt1/vector.jpg" alt="The Scream">
+    </div>
+  </body>
+  <script src="https://cs.nyu.edu/~kapp/cs101/processing_on_the_web/processing.js"></script> 
+ 
+  <script>
+    function can()
+    {
+    var canvas = document.getElementById("mycanvas"); 
+ 
+     var sketchProc = function(processingInstance) {
+      with (processingInstance) {
+        console.log(screen);
+         size(480, 300); 
+         frameRate(100);
+         var draw = function() {
+           ctx = canvas.getContext("2d");
+
+           var background = new Image();
+           background.src = "https://i.ibb.co/p2cL1Hy/vectord.jpg";
+          background.onload = function(){
+            ctx.drawImage(background,0,0,480,300);   
+             strokeWeight(2);
+             stroke(11, 143, 40);
+             line(mouseX, 0, mouseX, 400)
+          }
+         }
+     }};
+     
+     var processingInstance = new Processing(canvas, sketchProc); 
+    }
+    can();
+  </script>
+</html>
